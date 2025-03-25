@@ -14,9 +14,9 @@ export default function Banner() {
 
   useGSAP(() => {
     gsap.fromTo(
-        banner.current,
+      banner.current,
       { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+      { y: 0, opacity: 1, delay: 0.8, duration: 1, ease: "power2.out" }
     );
   }, []);
   return (
