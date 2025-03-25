@@ -17,16 +17,19 @@ export default function Banner() {
         <p className="mt-4 tracking-widest text-2xl text-[#6B6B6B]">
           Front-End Web Developer
         </p>
-        <p className="mt-4 tracking-widest font-light">
-          Your friendly neighborhood frontend developer, UX architect, and
-          JavaScript engineer. I spend my days (and often nights) painting the
-          Internet canvas with Projects and lines of code, turning zeroes and
-          ones into immersive, interactive experiences, Bona fide photochromic
-          Lens enthusiast - sunlight or indoors, I've got it covered. I tread
-          the path of minimalism, finding beauty in simplicity and order. When
-          I'm not crafting beautiful web experiences, you can find me reading
+        <p className="mt-4 text-base tracking-widest font-light leading-6">
+          A passionate frontend developer with a love for clean UI, smooth user
+          experiences, and well-structured code. Currently exploring backend
+          development to become a full-stack developer. With a background in
+          Physics. <br />
         </p>
-        <div className="flex gap-6 mt-6 text-[#6B6B6B]">
+        <p className="mt-1.5 text-base tracking-widest font-light leading-6">
+          I enjoy problem-solving and logical thinking, which I apply to web
+          development. Always eager to learn new technologies and improve my
+          skills. When I'm not coding, you can find me experimenting with ITX
+          builds or exploring the depths of physics.
+        </p>
+        <div className="flex gap-8 mt-6 text-[#6B6B6B]">
           <a href="https://linkedin.com" target="_blank">
             <FaLinkedin size={16} />
           </a>
