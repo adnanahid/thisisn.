@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 import {
   FaLinkedin,
   FaGithub,
@@ -7,8 +10,20 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 export default function Banner() {
+  const banner = useRef(null);
+
+  useGSAP(() => {
+    gsap.fromTo(
+        banner.current,
+      { y: -50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+    );
+  }, []);
   return (
-    <div className="max-w-[900px] mx-auto mt-12 min-h-[calc(100vh-185px)] flex pt-28">
+    <div
+      ref={banner}
+      className="max-w-[900px] mx-auto mt-12 min-h-[calc(100vh-185px)] flex pt-28"
+    >
       <section>
         <h1 className="text-6xl font-light mt-4 tracking-widest">Hi,</h1>
         <h1 className="text-6xl font-light mt-2 tracking-widest">
